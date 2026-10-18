@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 736 736" width="736" height="736">
+  <defs>
+    <!-- Lo negro de la máscara se vuelve transparente en la calavera -->
+    <mask id="cutouts" maskUnits="userSpaceOnUse" x="0" y="0" width="736" height="736">
+      <rect width="736" height="736" fill="#fff"/>
+
+      <!-- Ojos -->
+      <ellipse cx="246" cy="389" rx="46" ry="62" fill="#000" transform="rotate(10 246 389)"/>
+      <ellipse cx="498" cy="389" rx="46" ry="62" fill="#000" transform="rotate(-10 498 389)"/>
+
+      <!-- Hendiduras de los dientes (abiertas hacia abajo) -->
+      <g stroke="#000" stroke-width="11" stroke-linecap="round">
+        <line x1="343" y1="510" x2="343" y2="570"/>
+        <line x1="393" y1="510" x2="393" y2="570"/>
+      </g>
+    </mask>
+  </defs>
+
+  <!-- Calavera rosa, sin fondo -->
+  <path mask="url(#cutouts)" fill="#F2A6C3" d="
+    M 296 557
+    L 296 518
+    C 204 510, 140 440, 140 330
+    C 140 220, 232 145, 372 145
+    C 512 145, 603 220, 603 330
+    C 603 440, 540 510, 448 518
+    L 448 557
+    Z"/>
+</svg>
